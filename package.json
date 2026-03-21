@@ -2,10 +2,10 @@
   "name": "com.onion.pool",
   "version": "1.0.0",
   "displayName": "Onion Pool",
-  "description": "",
+  "description": "Pooling system for Unity.",
   "unity": "6000.0",
   "author": {
-    "name": "seungbin",
+    "name": "Seungbin",
     "email": "dev.seungbin@gmail.com"
   }
 }
