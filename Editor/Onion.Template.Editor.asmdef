@@ -1,8 +1,8 @@
 {
-    "name": "Onion.Template.Editor",
-    "rootNamespace": "Onion",
+    "name": "Onion.Pool.Editor",
+    "rootNamespace": "Onion.Pool.Editor",
     "references": [
-        "Onion.Template.Runtime"
+        "Onion.Pool.Runtime"
     ],
     "includePlatforms": [
         "Editor"

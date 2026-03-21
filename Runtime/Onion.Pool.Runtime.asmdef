@@ -1,6 +1,6 @@
 {
-    "name": "Onion.Template.Runtime",
-    "rootNamespace": "Onion",
+    "name": "Onion.Pool.Runtime",
+    "rootNamespace": "Onion.Pool",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
