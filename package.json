@@ -1,0 +1,11 @@
+{
+  "name": "com.onion.template",
+  "version": "1.0.0",
+  "displayName": "Onion Template Package",
+  "description": "",
+  "unity": "6000.0",
+  "author": {
+    "name": "seungbin",
+    "email": "dev.seungbin@gmail.com"
+  }
+}
