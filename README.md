@@ -7,6 +7,7 @@ Smart, Thread-Safe, and Asynchronous Data Pooling for Unity
 ### Installation
 
 Install via Unity Package Manager (UPM).
+
 `https://github.com/onion-unity/onion-pool.git`
 
 ### Data Class Definition
@@ -37,7 +38,7 @@ Gradually reduces pool size based on peak usage to prevent memory bloating and C
 
 ```csharp
 DataPool<MyData>.trimAuto = true;      // Enable/Disable auto-cleanup
-DataPool<MyData>.trimMinSize = 32;   // Ensure min (total) size
+DataPool<MyData>.trimMinSize = 32;     // Ensure min (pool + active) size
 DataPool<MyData>.trimInterval = 5.0f;  // Check every 5 seconds
 DataPool<MyData>.trimRatio = 0.2f;     // Decay by 20% of peak capacity
 ```
