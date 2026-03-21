@@ -14,3 +14,6 @@ Thumbs.db
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+LICENSE.meta
+package.json.meta
+README.md.meta
