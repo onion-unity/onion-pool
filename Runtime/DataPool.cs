@@ -20,10 +20,9 @@ namespace Onion.Pool {
 
         private static bool _trimAuto = true;
         private static bool _isTrimming = false;
-        private static int _trimMinSize = 0;
         private static float _trimRatio = 0.2f;
         private static float _trimInterval = 5.0f;
-
+        private static int _capacity = 0;
         private static int _peakCapacity = 0;
 
         public static bool trimAuto {
@@ -40,9 +39,9 @@ namespace Onion.Pool {
             }
         }
 
-        public static int trimMinSize {
-            get { lock (_lock) { return _trimMinSize; } }
-            set { lock (_lock) { _trimMinSize = Mathf.Max(0, value); } }
+        public static int capacity {
+            get { lock (_lock) { return _capacity; } }
+            set { lock (_lock) { _capacity = Mathf.Max(0, value); } }
         }
 
         public static float trimRatio {
@@ -123,7 +122,7 @@ namespace Onion.Pool {
 
         private static void Trim() {
             lock (_lock) {
-                int targetSize = Mathf.Max(_trimMinSize, Mathf.CeilToInt(_peakCapacity * (1 - _trimRatio)));
+                int targetSize = Mathf.Max(_capacity, Mathf.CeilToInt(_peakCapacity * (1 - _trimRatio)));
                 int trimCount = _active.Count + _pool.Count - targetSize;
 
                 if (trimCount <= 0) {
