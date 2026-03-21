@@ -5,7 +5,11 @@
   "description": "Pooling system for Unity.",
   "unity": "6000.0",
   "author": {
-    "name": "Seungbin",
-    "email": "dev.seungbin@gmail.com"
+    "name": "Seungbin"
+  },
+  "hideInEditor": false,
+  "repository": {
+    "url": "https://github.com/onion-unity/onion-pool.git",
+    "type": "git"
   }
 }
