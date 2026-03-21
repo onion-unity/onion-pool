@@ -38,7 +38,8 @@ Gradually reduces pool size based on peak usage to prevent memory bloating and C
 
 ```csharp
 DataPool<MyData>.trimAuto = true;      // Enable/Disable auto-cleanup
-DataPool<MyData>.trimMinSize = 32;     // Ensure min (pool + active) size
 DataPool<MyData>.trimInterval = 5.0f;  // Check every 5 seconds
 DataPool<MyData>.trimRatio = 0.2f;     // Decay by 20% of peak capacity
+
+DataPool<MyData>.capacity = 32;        // Ensure capacity
 ```
