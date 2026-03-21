@@ -27,10 +27,10 @@ public class MyData : IPoolable  {
 ### Get/Release Data
 
 ```csharp
+var data = DataPool<MyData>.Get(); // get
 
-var data = DataPool<MyData>.Get();
-DataPool<MyData>.Release(data);
-
+DataPool<MyData>.Release(data);    // release
+data.Release()                     // or 
 ```
 
 ### Trim Settings
