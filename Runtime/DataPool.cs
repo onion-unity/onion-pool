@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 
 namespace Onion.Pool {
-    public static class DataPool {
+    internal static class DataPool {
         public static CancellationToken exitToken { get; private set; }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
