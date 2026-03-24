@@ -30,7 +30,7 @@ public class MyData : IPoolable  {
 var data = DataPool<MyData>.Get(); // get
 
 DataPool<MyData>.Release(data);    // release
-data.Release()                     // or 
+data.Release();                    // or 
 ```
 
 ### Trim Settings
